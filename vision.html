@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html class="dark" lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Vision - ARCHI-TECH</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&amp;family=Space+Grotesk:wght@300;400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#111418",
+                        "surface-dark": "#1c2127",
+                        "slate-accent": "#283039",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "serif-jp": ["Noto Serif JP", "serif"],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(17, 20, 24, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .japanese-serif {
+            font-family: 'Noto Serif JP', serif;
+        }
+
+        .tech-grid {
+            background-size: 40px 40px;
+            background-image:
+                linear-gradient(to right, rgba(19, 127, 236, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(19, 127, 236, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-200 font-display overflow-x-hidden selection:bg-primary selection:text-white">
+
+    <!-- Top Navigation -->
+    <header class="fixed top-0 w-full z-50 border-b border-[#283039] glass-nav transition-all duration-300">
+        <div class="px-5 md:px-10 lg:px-40 py-4 flex items-center justify-between">
+            <a href="code.html" class="flex items-center gap-3 text-white hover:opacity-80 transition-opacity">
+                <div class="size-8 text-primary">
+                    <span class="material-symbols-outlined !text-[32px]">architecture</span>
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="text-white text-lg font-bold leading-none tracking-wide">ARCHI-TECH</h2>
+                    <span class="text-[10px] text-gray-400 tracking-widest uppercase">東京 / フューチャーシステムズ</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex flex-1 justify-end gap-10 items-center">
+                <a class="text-primary transition-colors text-sm font-medium flex flex-col items-center group"
+                    href="vision.html">
+                    <span class="japanese-serif">ビジョン</span>
+                    <span class="text-[10px] text-primary/70">VISION</span>
+                </a>
+                <a class="text-gray-300 hover:text-primary transition-colors text-sm font-medium flex flex-col items-center group"
+                    href="projects.html">
+                    <span class="japanese-serif">プロジェクト</span>
+                    <span class="text-[10px] text-gray-500 group-hover:text-primary/70">PROJECTS</span>
+                </a>
+                <a class="text-gray-300 hover:text-primary transition-colors text-sm font-medium flex flex-col items-center group"
+                    href="technology.html">
+                    <span class="japanese-serif">テクノロジー</span>
+                    <span class="text-[10px] text-gray-500 group-hover:text-primary/70">TECHNOLOGY</span>
+                </a>
+                <a class="text-gray-300 hover:text-primary transition-colors text-sm font-medium flex flex-col items-center group"
+                    href="news.html">
+                    <span class="japanese-serif">ニュース</span>
+                    <span class="text-[10px] text-gray-500 group-hover:text-primary/70">NEWS</span>
+                </a>
+                <a href="contact.html"
+                    class="ml-4 flex cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-600 transition-colors text-white text-sm font-bold tracking-wide shadow-[0_0_15px_rgba(19,127,236,0.3)]">
+                    <span class="truncate">お問い合わせ</span>
+                </a>
+            </nav>
+            <button class="lg:hidden text-white">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="pt-[72px] flex flex-col min-h-screen">
+        <!-- Hero -->
+        <section class="relative w-full h-[50vh] flex items-center justify-center overflow-hidden bg-background-dark">
+            <div class="absolute inset-0 w-full h-full bg-cover bg-center"
+                style='background-image: linear-gradient(rgba(17, 20, 24, 0.6), rgba(17, 20, 24, 0.9)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDRDFk3O4ANIh7eKELHS3YM1CvJE6JmhEhoWwWUHtvZYS9qU7fkPuHxRrZ1sZAXyTMBEhrj1kxMrYiGDIWDSTXuMf9VHy6Z7BZ-0fdkV3js93JtgaWeVvsezkeplcfkknSBpVpoa4QKzMwL6iz9twXfhXDOgPONX7ggmNTO9o_Q3DEJwD1pudJzXLZBmUCkl29mjc_OTaqHKeZwrpx4JYyJ3zCr7Xr9f8zRSjkKj3pljJfw-b6xx-f6YUTmfGmBtJw8xkUo7nvBwao");'>
+            </div>
+            <div class="absolute inset-0 tech-grid opacity-20 pointer-events-none"></div>
+            <div class="relative z-10 text-center px-4">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 japanese-serif">私たちのビジョン</h1>
+                <p class="text-primary tracking-widest uppercase text-sm font-display">Philosophy & Future</p>
+            </div>
+        </section>
+
+        <!-- Philosophy Details -->
+        <section class="py-20 px-6 md:px-10 lg:px-40 max-w-[1400px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6 japanese-serif">建築は<br>生きている</h2>
+                    <div class="w-20 h-1 bg-primary mb-8"></div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        従来の建築は「器」を作ることに主眼が置かれていました。しかし、私たちは建築を「生命体」として捉えています。住む人の息遣い、環境の変化、エネルギーの流れ。それら全てを感知し、最適化し続ける建築こそが、次世代のスタンダードになると信じています。
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        ARCHI-TECHが目指すのは、物理空間とデジタル空間の完全な融合です。BIM（ビルディング・インフォメーション・モデリング）を超えた、AIによる自律制御システムを建築のDNAとして組み込みます。
+                    </p>
+                </div>
+                <div class="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-gray-800">
+                    <div class="absolute inset-0 bg-cover bg-center hover:scale-105 transition-transform duration-700"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdrtpahPwFheJB9TkIM4yf5YikCPHCVo94dVZPBspYAswkCqpVGURFPUuS_dDqxWAXC4OTFkFKX2NXvIxtZa6GzzSfsSXE-1eaHEGtXKjqKNMXuYc7XlzcfxnMOodcTs7Y5usMqb05DSpB0S-vjMrGHLPGmpC7KZ2p0HoZQecC5fIW9aSZjf_VufG3Nr-VZ2bgDdzb39PgQ-rAJteMFWr45twoyBP6kuucuNH76YcSewfMn7RcMt0YHQEAB3br202Srh-kzYcgXPg");'>
+                    </div>
+                    <div
+                        class="absolute bottom-6 left-6 bg-black/70 backdrop-blur p-4 rounded border-l-2 border-primary">
+                        <p class="text-white font-mono text-sm">Target: Symbiosis</p>
+                        <p class="text-gray-400 text-xs">Human x Architecture</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Principles -->
+        <section class="py-20 bg-surface-dark border-y border-[#283039]">
+            <div class="px-6 md:px-10 lg:px-40 max-w-[1400px] mx-auto">
+                <h2 class="text-center text-3xl font-bold text-white mb-16 japanese-serif">3つの原則</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div
+                        class="bg-background-dark p-8 rounded-xl border border-gray-800 hover:border-primary transition-colors group">
+                        <span
+                            class="material-symbols-outlined text-4xl text-primary mb-4 group-hover:scale-110 transition-transform">neurology</span>
+                        <h3 class="text-xl font-bold text-white mb-3">Data-Driven</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            全ての意思決定をデータに基づいて行います。感覚だけでなく、数値的根拠に基づいた快適性を追求します。</p>
+                    </div>
+                    <div
+                        class="bg-background-dark p-8 rounded-xl border border-gray-800 hover:border-primary transition-colors group">
+                        <span
+                            class="material-symbols-outlined text-4xl text-primary mb-4 group-hover:scale-110 transition-transform">forest</span>
+                        <h3 class="text-xl font-bold text-white mb-3">Regenerative</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            環境負荷をゼロにするだけでなく、マイナスにする。炭素吸収素材やエネルギー生成技術を標準採用します。</p>
+                    </div>
+                    <div
+                        class="bg-background-dark p-8 rounded-xl border border-gray-800 hover:border-primary transition-colors group">
+                        <span
+                            class="material-symbols-outlined text-4xl text-primary mb-4 group-hover:scale-110 transition-transform">diversity_3</span>
+                        <h3 class="text-xl font-bold text-white mb-3">Human-Centric</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">テクノロジーは人のためにある。最新技術を意識させない、自然で直感的な居住体験を提供します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-background-dark border-t border-[#283039] pt-16 pb-8">
+        <div class="px-6 md:px-10 lg:px-40 max-w-[1400px] mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 text-white mb-6">
+                        <span class="material-symbols-outlined text-primary">architecture</span>
+                        <h3 class="text-lg font-bold tracking-wide">ARCHI-TECH</h3>
+                    </div>
+                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
+                        知的なデザインと持続可能なエンジニアリングでスカイラインを形成します。東京を拠点に、世界とつながる。
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#"><span
+                                class="material-symbols-outlined">public</span></a>
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#"><span
+                                class="material-symbols-outlined">mail</span></a>
+                        <a class="text-gray-400 hover:text-white transition-colors" href="#"><span
+                                class="material-symbols-outlined">call</span></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">サイトマップ</h4>
+                    <ul class="flex flex-col gap-2 text-sm text-gray-400">
+                        <li><a class="hover:text-primary transition-colors" href="code.html">ホーム</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="vision.html">ビジョン</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="projects.html">プロジェクト</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="news.html">ニュース</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">サービス</h4>
+                    <ul class="flex flex-col gap-2 text-sm text-gray-400">
+                        <li><a class="hover:text-primary transition-colors" href="#">建築デザイン</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">都市計画</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">BIMコンサルティング</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#">持続可能性分析</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">ニュースレター</h4>
+                    <p class="text-gray-500 text-xs mb-4">最新の建築トレンドを購読する。</p>
+                    <div class="flex gap-2">
+                        <input
+                            class="bg-surface-dark border border-[#3b4754] text-white text-sm rounded px-3 py-2 w-full focus:outline-none focus:border-primary"
+                            placeholder="メールアドレス" type="email" />
+                        <button class="bg-primary hover:bg-blue-600 text-white rounded px-3 py-2 transition-colors">
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="border-t border-[#283039] pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-600">
+                <p>© 2024 Archi-Tech Inc. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a class="hover:text-gray-400" href="#">プライバシーポリシー</a>
+                    <a class="hover:text-gray-400" href="#">利用規約</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
